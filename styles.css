@@ -1,0 +1,149 @@
+/* Reset básico para garantir que todos os navegadores tenham uma base consistente */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no tamanho total do elemento */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0); /* Gradiente de fundo da página que vai de cinza claro para cinza escuro */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade do texto */
+}
+
+.container {
+    width: 80%; /* Define a largura da área de conteúdo principal */
+    margin: auto; /* Centraliza o container horizontalmente */
+    overflow: hidden; /* Garante que o conteúdo interno não transborde */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(to right, #333, #555); /* Gradiente linear no fundo do cabeçalho que vai de preto para cinza escuro */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 20px 0; /* Espaçamento interno superior e inferior do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    border-bottom: 5px solid #ff6600; /* Linha decorativa abaixo do cabeçalho */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Espaçamento inferior para o título do cabeçalho */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores das listas de navegação */
+    display: flex; /* Usa flexbox para organizar os itens da lista em linha */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaçamento horizontal entre os itens da lista */
+}
+
+nav ul li a {
+    color: #fff; /* Cor dos links na navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Cor dos links ao passar o mouse */
+}
+
+/* Estilo das seções principais */
+section {
+    margin: 20px 0; /* Espaçamento superior e inferior das seções */
+    padding: 20px; /* Espaçamento interno das seções */
+    background: #fff; /* Fundo branco para as seções */
+    border-radius: 8px; /* Bordas arredondadas para as seções */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor das seções */
+}
+
+/* Gradiente de fundo nas seções alternadas */
+section:nth-of-type(odd) {
+    background: linear-gradient(to right, #ffffff, #f9f9f9); /* Gradiente que vai de branco para um cinza muito claro nas seções ímpares */
+}
+
+section:nth-of-type(even) {
+    background: linear-gradient(to right, #f9f9f9, #ffffff); /* Gradiente que vai de cinza muito claro para branco nas seções pares */
+}
+
+section h2 {
+    margin-bottom: 15px; /* Espaçamento inferior para os títulos das seções */
+    color: #333; /* Cor dos títulos das seções */
+}
+
+/* Estilo para listas não ordenadas e ordenadas */
+ul, ol {
+    margin-left: 20px; /* Espaçamento à esquerda das listas */
+    padding-left: 20px; /* Preenchimento à esquerda das listas */
+}
+
+/* Estilo das tabelas */
+table {
+    width: 100%; /* Tabela ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células da tabela */
+    background: #fff; /* Fundo branco para a tabela */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Borda leve para a tabela e células */
+}
+
+th, td {
+    padding: 10px; /* Espaçamento interno das células da tabela */
+    text-align: left; /* Alinha o texto à esquerda dentro das células */
+}
+
+th {
+    background: linear-gradient(to bottom, #333, #555); /* Gradiente linear no cabeçalho da tabela que vai de preto para cinza escuro */
+    color: #fff; /* Cor do texto no cabeçalho da tabela */
+}
+
+/* Estilo dos formulários */
+form div {
+    margin-bottom: 15px; /* Espaçamento inferior para cada grupo de campos no formulário */
+}
+
+form label {
+    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+    margin-bottom: 5px; /* Espaçamento inferior para os rótulos */
+}
+
+form input, form textarea {
+    width: 100%; /* Campo de entrada e área de texto ocupam toda a largura disponível */
+    padding: 10px; /* Espaçamento interno dos campos */
+    border: 1px solid #ddd; /* Borda leve ao redor dos campos */
+    border-radius: 4px; /* Bordas arredondadas para os campos */
+    transition: border-color 0.3s ease; /* Transição suave para a mudança na cor da borda ao focar no campo */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff6600; /* Cor da borda ao focar no campo */
+}
+
+form button {
+    background: linear-gradient(to right, #333, #555); /* Gradiente linear no fundo do botão que vai de preto para cinza escuro */
+    color: #fff; /* Cor do texto no botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves para a mudança de cor de fundo e transformação ao passar o mouse */
+}
+
+form button:hover {
+    background: linear-gradient(to right, #ff6600, #ff9933); /* Gradiente linear no fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão levemente ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto no rodapé */
+    margin-top: 20px; /* Espaçamento superior do rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    background: linear-gradient(to right, #333, #555); /* Gradiente linear no fundo do rodapé que vai de preto para cinza escuro */
+    color: #fff; /* Cor do texto no rodapé */
+}
